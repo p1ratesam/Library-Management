@@ -1,0 +1,15 @@
+.videoContainer {
+      width: 15%;
+      height: auto;
+      /* border-radius:8px; */
+      position: absolute;
+      top: 5%;
+      text-align:center;
+      right: 22%;
+}
+.videoElement {
+      width: 100%;
+      border-radius: 0.5rem;
+      height: 100%;
+    
+}

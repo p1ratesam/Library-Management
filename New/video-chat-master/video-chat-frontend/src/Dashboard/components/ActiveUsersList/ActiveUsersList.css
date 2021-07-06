@@ -1,0 +1,148 @@
+/* Active user list Container */
+.active_user_list_container {
+  width: 98%;
+  height: 100%;
+  border:0.025em solid red;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  background-color: #c6c6c6;
+  /* margin-top:15%; */
+}
+
+/* Each list Item of Active User */
+.active_user_list_item {
+  width: 95%;
+  margin:0.3125rem;
+  border-radius:30%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+  background-color:rgba(33, 231, 165, 0.4);
+  /* border: 0.425rem solid plum; */
+}
+
+/* After Hover at any List Item */
+.active_user_list_item:hover {
+  background-color: indigo;
+  border: 0.425rem double greenyellow;
+/* border-style:ridge; */
+} 
+
+/* Image Container of the list item */
+.active_user_list_image_container {
+  width: 30%;
+  margin-left: 1.25rem;
+  margin-right: 0.5rem;
+}
+
+/* Text Container of the list Item */
+.active_user_list_text {
+  width:70%;
+  font-size: medium;
+  text-align: center;
+  vertical-align: middle;
+  overflow:hidden;
+}
+
+/* Text Container of the list Item after hovering */
+.active_user_list_text:hover {
+  font-size: large;
+  overflow:visible;
+}
+/* Image of the Image Container of the list item */
+.active_user_list_image {
+  width: 2.5em;
+  border-radius:50%;
+}
+@media screen and (max-width:600px){
+
+  /* Active user list Container */
+  .active_user_list_container {
+    border:none;
+  }
+  /* Text Container of the list Item */
+.active_user_list_text {
+  font-size:x-small;
+  overflow:hidden;
+}
+/* Text Container of the list Item  after hover*/
+.active_user_list_text:hover {
+  font-size:xx-small;
+
+}
+/* Each list Item of Active User */
+.active_user_list_item{
+  flex-direction:column;
+  width:80%;
+  overflow:hidden;
+}
+/* Each list Item of Active User after hover */
+.active_user_list_item:hover{
+  /* width:95%; */
+  text-align:center;
+}
+/* Image Container of the list item */
+.active_user_list_image_container {
+  width: 60%;
+  margin: auto auto;
+}
+  
+}
+@media screen and (min-width:600px) and (max-width:900px){
+
+  /* Text Container of the list Item */
+.active_user_list_text {
+  font-size:x-small;
+}
+  /* Text Container of the list Item  after hover*/
+.active_user_list_text:hover {
+  font-size:small;
+}
+/* Each list Item of Active User */
+.active_user_list_item{
+  width:90%;
+  align-items: center;
+  overflow:hidden;
+}
+/* Each list Item of Active User after hover*/
+.active_user_list_item:hover{
+  /* width:95%; */
+  text-align: center;
+}
+/* Image Container of the list item */
+.active_user_list_image_container {
+  width: 60%;
+  margin: auto auto;
+  text-align:center;
+}
+  
+}
+@media screen and (min-width:1800px) {
+/* Each list Item of Active User */
+.active_user_list_item{
+  /* flex-direction:column; */
+  width:95%;
+  height: 200px;
+  overflow:hidden;
+}
+/* Image Container of the list item */
+.active_user_list_image_container {
+  width: 60%;
+  margin: auto auto;
+  text-align:center;
+}
+ /* Text Container of the list Item */
+ .active_user_list_text {
+  font-size:3rem;
+}
+  /* Text Container of the list Item  after hover*/
+.active_user_list_text:hover {
+  font-size:3.5rem;
+}
+/* Image of the Image Container of the list item */
+.active_user_list_image {
+  width: 5em;
+  border-radius:50%;
+}
+}

@@ -1,0 +1,39 @@
+.videoRContainer {
+  /* border-radius:8px; */
+  position: absolute;
+  text-align:center;
+  width: 30%;
+  height: auto;
+  top: 15%;
+  right: 45%;
+}
+.videoRElement {
+  width: 100%;
+  border-radius: 0.5rem;
+  height: 100%;
+
+}
+@media screen and (max-width:600px){
+  .videoRContainer {
+        width: 70%;
+        height: auto;
+        top:20%;
+        right:25%;
+  }
+}
+@media screen and (min-width:600px) and (max-width:900px){
+  .videoRContainer {
+        width: 50%;
+        height: auto;
+        top:14%;
+        right:35%;
+  }
+}
+@media screen and (min-width:1800px){
+  .videoRContainer{
+    width: 45%;
+    height: auto;
+    top: 12%;
+    right: 40%;
+  }
+}

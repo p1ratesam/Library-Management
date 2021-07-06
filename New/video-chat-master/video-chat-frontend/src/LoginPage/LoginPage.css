@@ -1,0 +1,247 @@
+
+/* whole login page conatiner */
+
+.login-page_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:rgba(92, 245, 186, 0.945);
+} 
+
+/* .login-page_container:hover {
+  background-color:rgba(74, 71, 231, 0.6);
+} */
+
+/* login box of login page */
+
+.login-page_login_box {
+  width: 75%;
+  height: 75%;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  /* background-color:#652cd6; */
+  background-color:rgba(128,0,255,0.2);
+}
+
+/* Changes in login box when hovered */
+
+.login-page_login_box:hover{
+  background-color:rgba(0,0,0,0.6); 
+}
+
+/*-------------------------------------
+--------------------Header------------- 
+---------------------------------------*/
+/* Header part of login part */
+
+.login-page_logo_container {
+  width: 25%;
+  /* padding-top: 150px; */
+  /* padding-bottom: 50px;  */
+  height: 25%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Image in header part of login page */
+
+.login-page_logo_image {
+  width: 12.5rem;
+  border-radius:50%;
+}
+
+
+/*-------------------------------------
+--------------------Footer------------- 
+---------------------------------------*/
+
+/* Footer part of login page */
+
+.login-page_before_title_container{
+  width:40%;
+  height:40%;
+  /* padding-top:50px; */
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  display:flex;
+  flex-direction: column;
+  text-align:center;
+  /* justify-content:center; */
+  background-color:rgb(255,255,255);
+}
+
+/* .login-page_title_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* Part 1 of Footer  */
+
+.login-page_title_container h2{
+  padding: 0.9375rem;
+  color:black;
+  font-size: 100%;
+}
+
+/* Part 2 of Footer */
+
+.login-page_input_container {
+  /* width: 80%; */
+  display: flex;
+  justify-content: center;
+  padding: 0.9375rem;
+}
+
+/* Element of part 2 of Footer */
+
+.login-page_input {
+  width: 60%;
+  border-radius: 2.5rem;
+  outline:none;
+  text-align:center;
+  /* border: none; */
+  padding: 0.4375rem 0.4375rem;
+}
+
+/*Change in Tag Properties*/
+
+input{
+  text-align:center;
+}
+
+/*Part 3 of Footer */
+
+.login-page_button_container {
+  /* width: 80%; */
+  padding:0.9375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*Element of Part 3 of Footer*/
+.root-40{
+  width:min-content;
+  border-radius:2.5rem;
+}
+
+/* Change in element of part 3 of footer when hovered */
+
+.root-40:hover{
+  background-color:blue;
+}
+
+/*-----------------------------------
+-----------Media queries-------------
+-------------------------------------*/
+
+
+
+
+/* Max :450px */
+@media screen and (max-width:450px){
+
+  /* login box of login page */
+
+.login-page_login_box {
+  width: 100%;
+  height: 100%;
+  background-color:rgba(128,0,255,0.6);
+}
+
+/*-------------------------------------
+--------------------Footer------------- 
+---------------------------------------*/
+
+/* Footer part of login page */
+
+.login-page_before_title_container{
+  width:70%;
+  height:50%;
+}
+
+/* Footer  */
+
+.login-page_title_container,.login-page_input_container,.login-page_button_container{
+  margin-top:12%;
+}
+.login-page_title_container h2{
+  font-size:80%;
+}
+.root-40{
+  border-radius:2.5rem;
+}
+
+}
+/* min is 450px and max is 900px */
+@media screen and (max-width:900px) and (min-width:450px) {
+/* Image in header part of login page */
+
+  .login-page_logo_image {
+    width: 10.25rem;
+    border-radius:50%;
+  } 
+ /* Footer  */
+ .login-page_before_title_container h2{
+   font-size:90%;
+ } 
+ .login-page_button_container{
+  padding:0;
+}
+}
+/* min is 900px and max is 1800px*/
+@media screen and (min-width:900px) and (max-width:1800px){
+  .login-page_title_container h2,.login-page_input_container,.login-page_button_container{
+    font-size:120%;
+  }
+  .login-page_input{
+    height:80%;
+  }
+}
+/* min is 1800px  */
+@media screen and (min-width:1800px){
+
+  /* Image in header part of login page */
+
+  .login-page_logo_image {
+    width: 25rem;
+    border-radius:50%;
+  } 
+  .login-page_title_container h2,.login-page_input_container,.login-page_button_container{
+    font-size:300%;
+  }
+  .login-page_input{
+    height:150%;
+  }
+  .login-page_title_container,.login-page_input_container,.login-page_button_container{
+    padding:2.375rem;
+  }
+  /* .root-40{
+    width:20%;
+  } */
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #652cd6;
+  text-align: center;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #652cd6;
+  text-align: center;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #652cd6;
+  text-align: center;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #652cd6;
+  text-align: center;
+}
+
